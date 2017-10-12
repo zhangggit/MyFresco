@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        Fresco.initialize(this);  //初始化Fresco  在Application或当前类中 有一个就可以
+//        Fresco.initialize(this);  //初始化Fresco必须要在setContentView之前  在Application或当前类中 有一个就可以
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
