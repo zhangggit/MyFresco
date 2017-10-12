@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhanggang.myfresco.MainActivity">
+
+    <!--
+        占位图
+        app:placeholderImage="@mipmap/icon_placeholder"
+        app:placeholderImageScaleType="fitCenter"
+        正在加载图
+        app:progressBarImage="@mipmap/icon_progress_bar"
+        app:progressBarImageScaleType="centerInside"
+        正在加载的时间
+        app:progressBarAutoRotateInterval="5000"
+        加载失败图
+        app:failureImage="@mipmap/icon_failure"
+        app:failureImageScaleType="centerInside"
+        重试图
+        app:retryImage="@mipmap/icon_retry"
+        app:retryImageScaleType="centerInside"
+        淡入淡出
+        app:fadeDuration="5000"
+        背景图
+        app:backgroundImage="@mipmap/overlay_two"
+        叠加图
+        fresco:pressedStateOverlayImage="@android:color/holo_green_dark"
+        fresco:overlayImage="@android:color/black"
+        圆形图
+        app:roundAsCircle="true"
+        圆角图
+        app:roundedCornerRadius="30dp"
+        app:roundBottomLeft="true"  左下角圆角
+        app:roundBottomRight="true"   右下角圆角
+        app:roundTopLeft="true"  左上角圆角
+        app:roundTopRight="false"  右上角不圆角
+        设置边框的宽度和颜色
+        app:roundingBorderWidth="10dp"
+        app:roundingBorderColor="@color/colorAccent"
+        圆形或圆角底下的叠加颜色（空白区域的颜色）
+        app:roundWithOverlayColor="@color/colorPrimary"
+
+    -->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        app:backgroundImage="@mipmap/overlay_two"
+        app:fadeDuration="5000"
+        app:failureImage="@mipmap/icon_failure"
+        app:failureImageScaleType="centerInside"
+        app:placeholderImage="@mipmap/icon_placeholder"
+        app:placeholderImageScaleType="fitCenter"
+        app:progressBarAutoRotateInterval="5000"
+        app:progressBarImage="@mipmap/icon_progress_bar"
+        app:progressBarImageScaleType="centerInside"
+        app:retryImage="@mipmap/icon_retry"
+        app:retryImageScaleType="centerInside"
+        app:roundBottomLeft="true"
+        app:roundBottomRight="true"
+        app:roundTopLeft="true"
+        app:roundTopRight="false"
+        app:roundWithOverlayColor="@color/colorPrimary"
+        app:roundedCornerRadius="60dp"
+        app:roundingBorderColor="@color/colorAccent"
+        app:roundingBorderWidth="10dp" />
+
+</RelativeLayout>
